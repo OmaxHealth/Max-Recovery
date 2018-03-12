@@ -98,11 +98,11 @@ html, body { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-tap-hi
 header .upper { position: relative; }
 header .upper:before { content: ""; width: 50%; position: absolute; top: 0px; bottom: 0px; left: 0px; z-index: -1; background-color: #4D4D4D; }
 header .upper:after { content: ""; width: 50%; position: absolute; top: 0px; bottom: 0px; right: 0px; z-index: -1; background-color: #ebebeb; }
-header .upper .container:before { content: ""; display: block; position: absolute; top: 0px; bottom: 0px; width: 100%; background: #ebebeb url("../images/header-bg.svg") top left no-repeat; background-size: 150px 95px; }
+header .upper .container:before { content: ""; display: block; position: absolute; top: 0px; bottom: 0px; width: 100%; background: #ebebeb url("images/header-bg.svg") top left no-repeat; background-size: 150px 95px; }
 header .upper .container > * { position: absolute; }
-header .upper .container a.logo { display: block; background-image: url("../images/header-logo.svg"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; }
+header .upper .container a.logo { display: block; background-image: url("images/header-logo.svg"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; }
 header .upper .container a.logo span { display: none; }
-header .upper .container a.phone { display: block; background-image: url("../images/header-icon-phone.svg"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; }
+header .upper .container a.phone { display: block; background-image: url("images/header-icon-phone.svg"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; }
 header .upper .container a.phone span { display: none; }
 header .lower { background-color: #000; }
 header .lower span { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 400; font-style: normal; color: #fff; }
@@ -152,12 +152,12 @@ body.page-home main #hero .lower .row.r1 .productGroup { display: block; margin-
 body.page-home main #hero .lower .row.r1 .productGroup * { position: absolute; }
 body.page-home main #hero .lower .row.r2 { border-top: 4px solid #b3b3b3; }
 body.page-home main #hero .lower .row.r2 .flexbox .box { font-family: 'Oswald',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: normal; color: #F9E814; text-transform: uppercase; }
-@media (min-width: 1024px) { body.page-home main #hero .upper { background-image: url("../images/hero-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
+@media (min-width: 1024px) { body.page-home main #hero .upper { background-image: url("images/hero-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
   body.page-home main #hero .lower .r1 .productGroup { position: absolute; width: 100%; }
   body.page-home main #hero .lower .r1 a.button { position: absolute; }
   body.page-home main #hero .lower .r2 .flexbox { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
   body.page-home main #hero .lower .r2 .flexbox .box:nth-of-type(2) { position: relative; }
-  body.page-home main #hero .lower .r2 .flexbox .box:nth-of-type(2):before, body.page-home main #hero .lower .r2 .flexbox .box:nth-of-type(2):after { content: ""; position: absolute; top: 0px; background-image: url("../images/hero-arrows.png"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; width: 52px; height: 52px; } }
+  body.page-home main #hero .lower .r2 .flexbox .box:nth-of-type(2):before, body.page-home main #hero .lower .r2 .flexbox .box:nth-of-type(2):after { content: ""; position: absolute; top: 0px; background-image: url("images/hero-arrows.png"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; width: 52px; height: 52px; } }
 @media (min-width: 1280px) { body.page-home main #hero .upper .container { height: 780px; }
   body.page-home main #hero .upper h1 { font-size: 28px; line-height: 28px; margin-top: 40px; }
   body.page-home main #hero .upper h2 { margin-top: 90px; }
@@ -192,7 +192,7 @@ body.page-home main #hero .lower .row.r2 .flexbox .box { font-family: 'Oswald',H
   body.page-home main #hero .lower .r2 .flexbox .box:nth-of-type(2) { padding: 0 100px; }
   body.page-home main #hero .lower .r2 .flexbox .box:nth-of-type(2):before { left: 25px; }
   body.page-home main #hero .lower .r2 .flexbox .box:nth-of-type(2):after { right: 25px; } }
-@media (max-width: 1023px) { body.page-home main #hero .upper { background-image: url("../images/hero-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+@media (max-width: 1023px) { body.page-home main #hero .upper { background-image: url("images/hero-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; }
   body.page-home main #hero .upper h1 { display: none; }
   body.page-home main #hero .lower .r1 .productGroup, body.page-home main #hero .lower .r1 a.button { position: relative; }
   body.page-home main #hero .lower .r2 .box { text-align: center; }
@@ -242,10 +242,10 @@ body.page-home main #fuel h2 * { display: block; }
 body.page-home main #fuel h2 .ln1 { font-family: 'Oswald',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 500; font-style: italic; color: #fff; }
 body.page-home main #fuel h2 .ln2 { font-family: 'Oswald',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; color: #F9E814; }
 body.page-home main #fuel p { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 400; font-style: italic; color: #fff; }
-body.page-home main #fuel ul li { display: block; font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; color: #fff; background-image: url("../images/fuel-bullet.svg"); background-repeat: no-repeat; background-position: left top; background-size: auto auto; }
+body.page-home main #fuel ul li { display: block; font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; color: #fff; background-image: url("images/fuel-bullet.svg"); background-repeat: no-repeat; background-position: left top; background-size: auto auto; }
 body.page-home main #fuel ul li:last-of-type { margin-bottom: 0px !important; }
 body.page-home main #fuel ul li strong { display: block; font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: normal; color: #F9E814; }
-@media (min-width: 1024px) { body.page-home main #fuel { background-image: url("../images/fuel-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; background-color: #000; }
+@media (min-width: 1024px) { body.page-home main #fuel { background-image: url("images/fuel-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; background-color: #000; }
   body.page-home main #fuel .text { position: absolute; } }
 @media (min-width: 1280px) { body.page-home main #fuel .container { height: 850px; }
   body.page-home main #fuel .text { top: 100px; right: 0px; width: 630px; }
@@ -263,7 +263,7 @@ body.page-home main #fuel ul li strong { display: block; font-family: 'Roboto Co
   body.page-home main #fuel .text p { font-size: 20px; line-height: 28px; margin-bottom: 70px; }
   body.page-home main #fuel .text ul li { min-height: 60px; background-repeat: no-repeat; background-position: left top; background-size: 60px 60px; font-size: 22px; line-height: 22px; padding-left: 70px; padding-top: 2px; margin-bottom: 32px; }
   body.page-home main #fuel .text ul li strong { font-size: 22px; line-height: 22px; margin-bottom: 4px; } }
-@media (max-width: 1023px) { body.page-home main #fuel { background-image: url("../images/fuel-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; background-color: #000; }
+@media (max-width: 1023px) { body.page-home main #fuel { background-image: url("images/fuel-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; background-color: #000; }
   body.page-home main #fuel .text { display: block; margin-left: auto; margin-right: auto; text-align: center; }
   body.page-home main #fuel p { display: block; margin-left: auto; margin-right: auto; }
   body.page-home main #fuel ul li { text-align: left; } }
@@ -291,7 +291,7 @@ body.page-home main #fuel ul li strong { display: block; font-family: 'Roboto Co
   body.page-home main #fuel .text p { font-size: 14px; line-height: 18px; margin-bottom: 20px; }
   body.page-home main #fuel .text ul li { min-height: 40px; background-repeat: no-repeat; background-position: left top; background-size: 40px 40px; font-size: 14px; line-height: 14px; padding-left: 50px; padding-top: 2px; margin-bottom: 10px; }
   body.page-home main #fuel .text ul li strong { font-size: 16px; line-height: 16px; margin-bottom: 2px; } }
-body.page-home main #strength { background-image: url("../images/strength-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
+body.page-home main #strength { background-image: url("images/strength-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
 body.page-home main #strength .inner { display: block; background-color: rgba(0, 0, 0, 0.5); display: block; margin-left: auto; margin-right: auto; }
 body.page-home main #strength .inner h2, body.page-home main #strength .inner p { display: block; margin-left: auto; margin-right: auto; text-align: center; }
 body.page-home main #strength .inner h2 { font-family: 'Oswald',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 500; font-style: italic; color: #F9E814; text-transform: uppercase; }
@@ -316,7 +316,7 @@ body.page-home main #strength .inner .flexbox .box h3 { font-family: 'Roboto Con
   body.page-home main #strength .inner .flexbox .box { width: 160px; }
   body.page-home main #strength .inner .flexbox .box img.icon { width: 100px; height: 100px; margin-bottom: 30px; }
   body.page-home main #strength .inner .flexbox .box h3 { font-size: 16px; line-height: 20px; } }
-@media (max-width: 1023px) { body.page-home main #strength { background-image: url("../images/strength-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
+@media (max-width: 1023px) { body.page-home main #strength { background-image: url("images/strength-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
   body.page-home main #strength .inner { width: 96%; }
   body.page-home main #strength .flexbox .box h3 { display: block; margin-left: auto; margin-right: auto; }
   body.page-home main #strength .flexbox .box h3 br { display: none; } }
@@ -371,9 +371,9 @@ body.page-home main #midCTA .flexbox .box img.icon { display: block; margin-left
   body.page-home main #midCTA .flexbox .box img.icon { width: 70px; height: 70px; } }
 body.page-home main #certified .text h2 { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; color: #005596; -webkit-text-decoration: uppercase; text-decoration: uppercase; }
 body.page-home main #certified .text p { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: normal; color: #000; }
-body.page-home main #certified .text ul li { position: relative; background-image: url("../images/certified-bullet.png"); background-repeat: no-repeat; background-position: left center; background-size: auto auto; font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; color: #000; text-transform: uppercase; }
+body.page-home main #certified .text ul li { position: relative; background-image: url("images/certified-bullet.png"); background-repeat: no-repeat; background-position: left center; background-size: auto auto; font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; color: #000; text-transform: uppercase; }
 body.page-home main #certified img.logo { position: absolute; }
-@media (min-width: 1024px) { body.page-home main #certified { background-image: url("../images/certified-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
+@media (min-width: 1024px) { body.page-home main #certified { background-image: url("images/certified-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
   body.page-home main #certified .text { position: absolute; } }
 @media (min-width: 1280px) { body.page-home main #certified .container { height: 730px; }
   body.page-home main #certified .text { width: 640px; top: 180px; left: 50px; }
@@ -393,7 +393,7 @@ body.page-home main #certified img.logo { position: absolute; }
   body.page-home main #certified .text ul li:nth-of-type(1) { font-size: 20px; line-height: 35px; }
   body.page-home main #certified .text ul li:last-of-type { margin-bottom: 0px; }
   body.page-home main #certified img.logo { bottom: 90px; right: 40px; width: 100px; height: 125px; } }
-@media (max-width: 1023px) { body.page-home main #certified { background-image: url("../images/certified-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+@media (max-width: 1023px) { body.page-home main #certified { background-image: url("images/certified-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; }
   body.page-home main #certified ul li { background-position: top 6px left !important; } }
 @media (min-width: 768px) and (max-width: 1023px) { body.page-home main #certified .text { padding: 50px 40px; }
   body.page-home main #certified .text h2 { font-size: 72px; line-height: 72px; margin-bottom: 20px; }
@@ -422,7 +422,7 @@ body.page-home main #certified img.logo { position: absolute; }
 body.page-home main #work .inner { display: block; margin-left: auto; margin-right: auto; /*background-color:rgba(0,0,0,0.5);*/ }
 body.page-home main #work .inner h2 { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; color: #F9E814; text-align: center; text-transform: uppercase; }
 body.page-home main #work .inner h2 span { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; display: block; color: #fff; }
-@media (min-width: 1024px) { body.page-home main #work { background-image: url("../images/work-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
+@media (min-width: 1024px) { body.page-home main #work { background-image: url("images/work-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
   body.page-home main #work .inner { position: relative; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); } }
 @media (min-width: 1280px) { body.page-home main #work .container { height: 680px; }
   body.page-home main #work .inner h2 { font-size: 76px; line-height: 76px; }
@@ -430,7 +430,7 @@ body.page-home main #work .inner h2 span { font-family: 'Roboto Condensed',Helve
 @media (min-width: 1024px) and (max-width: 1279px) { body.page-home main #work .container { height: 550px; }
   body.page-home main #work .inner h2 { font-size: 60px; line-height: 60px; }
   body.page-home main #work .inner h2 span { font-size: 52px; line-height: 52px; } }
-@media (max-width: 1023px) { body.page-home main #work { background-image: url("../images/work-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; } }
+@media (max-width: 1023px) { body.page-home main #work { background-image: url("images/work-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; } }
 @media (min-width: 768px) and (max-width: 1023px) { body.page-home main #work .container { height: 650px; }
   body.page-home main #work .inner { margin-top: 360px; }
   body.page-home main #work .inner h2 { font-size: 80px; line-height: 80px; }
@@ -500,7 +500,7 @@ body.page-home main #lowerCTA .price .ln2 { position: absolute; left: 0px; right
   body.page-home main #lowerCTA .price .ln1 { font-size: 24px; line-height: 24px; }
   body.page-home main #lowerCTA .price .ln2 { font-size: 14px; line-height: 14px; } }
 
-body.page-product main #mainCTA { background-image: url("../images/choose-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
+body.page-product main #mainCTA { background-image: url("images/choose-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
 body.page-product main #mainCTA .heading { text-align: center; }
 body.page-product main #mainCTA .heading h1 * { font-family: 'Oswald',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 500; font-style: italic; text-transform: uppercase; }
 body.page-product main #mainCTA .heading h1 .ln1 { color: #fff; }
@@ -509,13 +509,13 @@ body.page-product main #mainCTA .offers .container { overflow: visible; }
 body.page-product main #mainCTA .flexbox { position: relative; margin-left: auto; margin-right: auto; }
 body.page-product main #mainCTA .flexbox h2 { position: relative; font-family: 'Oswald',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 500; font-style: italic; color: #F9E814; display: inline-block; text-align: center; }
 body.page-product main #mainCTA .flexbox .box { position: relative; background-color: #4D4D4D; text-align: center; }
-body.page-product main #mainCTA .flexbox .box:nth-of-type(3):after { content: ""; position: absolute; background-image: url("../images/choose-best-value.svg"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; }
-body.page-product main #mainCTA .flexbox .box:nth-of-type(3) h2:before { content: ""; position: absolute; left: 0px; background-image: url("../images/choose-sparta.png"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; }
+body.page-product main #mainCTA .flexbox .box:nth-of-type(3):after { content: ""; position: absolute; background-image: url("images/choose-best-value.svg"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; }
+body.page-product main #mainCTA .flexbox .box:nth-of-type(3) h2:before { content: ""; position: absolute; left: 0px; background-image: url("images/choose-sparta.png"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; }
 body.page-product main #mainCTA .flexbox .box .productImage { position: relative; display: block; width: 100%; background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
-body.page-product main #mainCTA .flexbox .box:nth-of-type(1) .productImage { background-image: url("../images/choose-option1.jpg"); }
-body.page-product main #mainCTA .flexbox .box:nth-of-type(2) .productImage { background-image: url("../images/choose-option2.jpg"); }
-body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .productImage { background-image: url("../images/choose-option3.jpg"); }
-body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .productImage:after { content: ""; position: absolute; display: block; background-image: url("../images/choose-round-value.svg"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; }
+body.page-product main #mainCTA .flexbox .box:nth-of-type(1) .productImage { background-image: url("images/choose-option1.jpg"); }
+body.page-product main #mainCTA .flexbox .box:nth-of-type(2) .productImage { background-image: url("images/choose-option2.jpg"); }
+body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .productImage { background-image: url("images/choose-option3.jpg"); }
+body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .productImage:after { content: ""; position: absolute; display: block; background-image: url("images/choose-round-value.svg"); background-repeat: no-repeat; background-position: center center; background-size: 100% 100%; }
 body.page-product main #mainCTA .flexbox .box .text { text-align: center; background-color: #000; }
 body.page-product main #mainCTA .flexbox .box .text .priceGroup { position: relative; display: block; margin-left: auto; margin-right: auto; }
 body.page-product main #mainCTA .flexbox .box .text span { position: relative; display: block; margin-left: auto; margin-right: auto; text-align: center; color: #fff; }

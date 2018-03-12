@@ -54,7 +54,7 @@ header {
 		&:before {content:""; width:50%; position:absolute; top:0px; bottom:0px; left:0px; z-index:-1; background-color:$color-gray;}
 		&:after {content:""; width:50%; position:absolute; top:0px; bottom:0px; right:0px; z-index:-1; background-color:#ebebeb;}
 		.container {
-			&:before {content:""; display:block; position:absolute; top:0px; bottom:0px; width:100%; background:#ebebeb url('../images/header-bg.svg') top left no-repeat; background-size:150px 95px;}
+			&:before {content:""; display:block; position:absolute; top:0px; bottom:0px; width:100%; background:#ebebeb url($image-folder + 'header-bg.svg') top left no-repeat; background-size:150px 95px;}
 			& > * {position:absolute;}
 			
 			a.logo {display:block; @include image-background($image-header-logo);
