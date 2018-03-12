@@ -1,0 +1,139 @@
+// Global: Boxes (Variable Height Boxes centered per Row, stacked in mobile)
+.flexbox {
+	&, & > .row {position:relative; width:100%; display:flex; flex-direction:row; justify-content:space-between; align-items:stretch;
+		.box {position:relative; display:block;}
+	}
+	& {flex-wrap:wrap;}	
+	& > .row {flex-wrap:nowrap;
+		&:last-of-type {margin-bottom:0px!important;}
+	}
+	
+	@include tablet_down {
+		&, & > .row {flex-direction:column; justify-content:flex-start; align-items:flex-start;
+			.box {width:100%; align-self:flex-start;}
+		}
+		& > .row:last-of-type > .box:last-of-type,
+		& > .box:last-of-type {margin-bottom:0px!important;}
+	}
+}
+
+// Global: Flexbox Columns (Even Height Columns, stacked in mobile)
+.flexcolumn {
+	&, & > .container {position:relative; width:100%; display:flex; flex-direction:row; flex-wrap:nowrap; justify-content:space-between; align-items:stretch;}
+	.column {position:relative; display:block;}
+	@include mobile {
+		&, & > .container {flex-direction:column; justify-content:flex-start; align-items:flex-start;
+			.column {width:100%;}
+		}
+	}
+}
+
+// Global: Buttons
+.button {display:block; text-align:center; background:linear-gradient(to bottom, #fffe11 0%,#efe100 100%); border-bottom:2px solid #bc990c; border-left:1px solid #dfcb24; border-right:1px solid #dfcb24; overflow:hidden; cursor:pointer;
+	span {position:relative; @include font('OswaldBold'); font-style:italic; text-transform:uppercase; letter-spacing:0.05em; color:#333333;}
+	&:hover {background:none #fffe11;}
+	
+	@include desktop {height:68px; width:240px; border-radius:4px;
+		span {@include button-text(28px);}
+	}
+	@include tablet_down {@include center-horizontal();}
+	@include tablet {height:120px; width:430px; border-radius:8px;
+		span {@include button-text(50px);}
+	}
+	@include mobile_540 {height:80px; width:300px; border-radius:6px;
+		span {@include button-text(36px);}
+	}
+	@include mobile_360 {height:56px; width:200px; border-radius:4px;
+		span {@include button-text(24px);}
+	}
+}
+
+// Global: Top Navigation
+header {
+	.upper {position:relative;
+		&:before {content:""; width:50%; position:absolute; top:0px; bottom:0px; left:0px; z-index:-1; background-color:$color-gray;}
+		&:after {content:""; width:50%; position:absolute; top:0px; bottom:0px; right:0px; z-index:-1; background-color:#ebebeb;}
+		.container {
+			&:before {content:""; display:block; position:absolute; top:0px; bottom:0px; width:100%; background:#ebebeb url('../images/header-bg.svg') top left no-repeat; background-size:150px 95px;}
+			& > * {position:absolute;}
+			
+			a.logo {display:block; @include image-background($image-header-logo);
+				span {display:none;}
+			}
+			a.phone {display:block; @include image-background($image-header-icon-phone);
+				span {display:none;}
+			}
+		}		
+	}
+	.lower {
+		& {background-color:#000;
+			span {@include font('MontserratRegular'); color:#fff;}
+		}
+	}
+	
+	@include desktop {
+		.upper {
+			.container {height:95px;
+				&:before {height:95px; left:300px;}
+				a.logo {top:2.5px; left:5px; @include image-size($image-header-logo,280px);}
+				a.phone {display:none;}
+				a.button {top:14px; right:5px; width:220px; height:68px;
+					span {@include button-text(24px);}
+				}
+			}
+		}
+		.lower .container {height:35px; text-align:right; padding-right:5px;
+			span {@include font-size(20px,35px);}
+		}
+	}
+	@include tablet {
+		.upper {
+			.container {height:95px;
+				&:before {height:95px; left:230px;}
+				a.logo {top:9px; left:5px; @include image-size($image-header-logo,240px);}
+				a.phone {display:none;}
+				a.button {top:14px; right:20px; width:220px; height:68px;
+					span {@include button-text(24px);}
+				}
+			}
+		}
+		.lower .container {height:50px; text-align:center;
+			span {@include font-size(26px,50px);}
+		}
+	}
+	@include mobile_540 {
+		.upper {
+			.container {height:68px;
+				&:before {height:68px; left:170px;}
+				a.logo {top:7px; left:15px; @include image-size($image-header-logo,170px);}
+				a.phone {top:4px; right:185px; @include image-size($image-header-icon-phone,36px);}
+				a.button {top:7.5px; right:15px; width:160px; height:50px;
+					span {@include button-text(18px);}
+				}
+			}
+		}
+		.lower .container {height:34px; text-align:center;
+			span {@include font-size(18px,34px);}
+		}
+	}
+	@include mobile_360 {
+		.upper {
+			.container {height:45px;
+				&:before {height:45px; left:60px;}
+			}
+			a.logo {top:3px; left:15px; @include image-size($image-header-logo,120px);}
+			a.phone {top:2px; right:125px; @include image-size($image-header-icon-phone,26px);}
+			a.button {top:7.5px; right:15px; width:100px; height:30px;
+				span {@include button-text(12px);}
+			}
+		}
+		.lower .container {height:22px; text-align:center;
+			span {@include font-size(12px,22px);}
+		}
+	}		
+}
+
+// Global: Footer
+footer {
+
+}
