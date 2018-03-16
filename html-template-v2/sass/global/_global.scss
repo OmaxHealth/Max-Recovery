@@ -30,7 +30,7 @@
 
 // Global: Buttons
 .button {display:block; text-align:center; background:linear-gradient(to bottom, #fffe11 0%,#efe100 100%); border-bottom:2px solid #bc990c; border-left:1px solid #dfcb24; border-right:1px solid #dfcb24; overflow:hidden; cursor:pointer;
-	span {position:relative; @include font('OswaldBold'); font-style:italic; text-transform:uppercase; letter-spacing:0.05em; color:#333333;}
+	span {position:relative; @include font('OswaldBold'); font-style:italic; text-transform:uppercase; color:#333333;}
 	&:hover {background:none #fffe11;}
 	
 	@include desktop {height:68px; width:240px; border-radius:4px;
@@ -50,6 +50,7 @@
 
 // Global: Top Navigation
 header {
+	& {position:fixed; top:0px; left:0px; right:0px; z-index:100;}
 	.upper {position:relative;
 		&:before {content:""; width:50%; position:absolute; top:0px; bottom:0px; left:0px; z-index:-1; background-color:$color-gray;}
 		&:after {content:""; width:50%; position:absolute; top:0px; bottom:0px; right:0px; z-index:-1; background-color:#ebebeb;}
@@ -112,8 +113,8 @@ header {
 				}
 			}
 		}
-		.lower .container {height:34px; text-align:center;
-			span {@include font-size(18px,34px);}
+		.lower .container {height:32px; text-align:center;
+			span {@include font-size(18px,32px);}
 		}
 	}
 	@include mobile_360 {
@@ -127,13 +128,146 @@ header {
 				span {@include button-text(12px);}
 			}
 		}
-		.lower .container {height:22px; text-align:center;
-			span {@include font-size(12px,22px);}
+		.lower .container {height:25px; text-align:center;
+			span {@include font-size(12px,25px);}
 		}
 	}		
 }
 
+
+main {
+	// Global: Fixed Navigation Spacer 
+	@include desktop {padding-top:130px;}
+	@include tablet {padding-top:145px;}
+	@include mobile_540 {padding-top:100px;}
+	@include mobile_360 {padding-top:70px;}
+
+	// Global Section: Legal Copy (Terms & Conditions / Privacy Policy)
+	#legal {
+		h1 {@include font('MontserratRegular'); color:#000; text-align:center; @include center-horizontal();}
+		h2 {@include font('MontserratSemiBold'); text-transform:uppercase;}
+		h3 {@include font('MontserratMedium');}
+		p, li {@include font('MontserratRegular');
+			strong {@include font('MontserratMedium');}
+		}
+		ul {margin-left:20px;
+			li {list-style-type:disc;}
+		}
+		ol {margin-left:20px;
+			li {list-style-type:decimal;}
+		}
+		a {@include font('MontserratRegular'); color:$color-blue; text-decoration:underline;}
+		
+		@include tablet_up {
+			h1 {margin-top:40px; margin-bottom:20px;}
+			h2 {margin:20px 0;}
+			h3 {@include font-size(16px);}
+			p, {@include font-size(16px,22px); margin-bottom:15px;}
+			ul, ol {margin-bottom:15px;
+				li {@include font-size(16px,22px); margin-bottom:5px;}
+			}
+		}
+		@include desktop {
+			h1 {@include font-size(42px);}
+			h2 {@include font-size(20px);}
+		}
+		@include tablet {
+			h1 {@include font-size(32px);}
+			h2 {@include font-size(18px);}
+		}
+		@include mobile {
+			h1 {@include font-size(26px); margin-top:20px; margin-bottom:20px;}
+			h2 {@include font-size(16px); margin-bottom:10px;}
+			p, {@include font-size(14px,20px); margin-bottom:10px;}
+			ul, ol {margin-bottom:10px;
+				li {@include font-size(14px,20px); margin-bottom:5px;}
+			}
+		}				
+	}
+
+	// Global Section: WordPress Blank Page
+	#wp-content {
+		h1 {@include font('MontserratRegular'); color:#000; text-align:center; @include center-horizontal();}
+		h2 {@include font('MontserratSemiBold'); text-transform:uppercase;}
+		h3 {@include font('MontserratMedium');}
+		p, li {@include font('MontserratRegular');
+			strong {@include font('MontserratMedium');}
+		}
+		ul {margin-left:20px;
+			li {list-style-type:disc;}
+		}
+		ol {margin-left:20px;
+			li {list-style-type:decimal;}
+		}
+		a {@include font('MontserratRegular'); color:$color-blue; text-decoration:underline;}
+		
+		@include tablet_up {
+			h1 {margin-top:40px; margin-bottom:20px;}
+			h2 {margin:20px 0;}
+			h3 {@include font-size(16px);}
+			p, {@include font-size(16px,22px); margin-bottom:15px;}
+			ul, ol {margin-bottom:15px;
+				li {@include font-size(16px,22px); margin-bottom:5px;}
+			}
+		}
+		@include desktop {
+			h1 {@include font-size(42px);}
+			h2 {@include font-size(20px);}
+		}
+		@include tablet {
+			h1 {@include font-size(32px);}
+			h2 {@include font-size(18px);}
+		}
+		@include mobile {
+			h1 {@include font-size(26px); margin-top:20px; margin-bottom:20px;}
+			h2 {@include font-size(16px); margin-bottom:10px;}
+			p, {@include font-size(14px,20px); margin-bottom:10px;}
+			ul, ol {margin-bottom:10px;
+				li {@include font-size(14px,20px); margin-bottom:5px;}
+			}
+		}
+	}
+}
+
 // Global: Footer
 footer {
+	& {background-color:#fafafa;}
+	.container {text-align:center;}
+	p {@include font('MontserratRegular',12px,16px); color:#454545; margin-bottom:10px;
+		&.disclaimer {border:1px solid #454545; padding:10px; @include center-horizontal(); display:inline-block;}
+		&.copyright {@include font('MontserratMedium');}
+		&:last-of-type {margin-bottom:0px;}
+	}
+	nav {margin-bottom:20px;
+		a {@include font('MontserratSemiBold',14px); color:#454545;
+			&:not(:last-of-type):after {content:"|"; padding:0 5px 0 10px; opacity:0.5;}
+			&:hover {color:$color-blue;
+				&:after {color:#454545;}
+			}		
+		}
+	}
+	
+	@include desktop {
+		.container {padding:40px 0;}
+	}
+	@include tablet {
+		.container {padding:30px 0;}
+		p.disclaimer {max-width:600px;}
+	}
+	@include mobile {
+		.container {padding:20px 15px;}
+	}
+	@include mobile_540 {
+		p.disclaimer {max-width:500px;}
+	}
+	@include mobile_360 {
+		nav {max-width:290px; @include center-horizontal();
+			a {display:inline-block;
+				&:nth-of-type(2):after {display:none;}
+				&:nth-of-type(3),
+				&:nth-of-type(4){margin-top:5px;}
+			}
+		}
+	}
 
 }

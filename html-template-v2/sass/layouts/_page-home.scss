@@ -4,8 +4,8 @@ body.page-home {
 		
 		// Section: Hero
 		#hero {
-			.upper {
-				h1 {@include font('RobotoBold'); color:#fff; @include center-horizontal(); text-align:center;  
+			.upper {background-color:#000;
+				h1 {@include font('RobotoBold'); color:#fff; @include center-horizontal(); text-align:center;
 					strong {@include font('RobotoBold'); color:$color-yellow; text-transform:uppercase;}
 				}
 				h2 {@include center-horizontal(); text-align:center; text-transform:uppercase;
@@ -214,7 +214,7 @@ body.page-home {
 			}
 			
 			@include desktop {
-				& {@include image-background($image-fuel-bg-desktop,'center center','auto 100%'); background-color:#000;}
+				& {@include image-background($image-fuel-bg-desktop,'center center','auto 100%'); background-color:#040404;}
 				.text {position:absolute;}
 			}
 			@include desktop_1280 {
@@ -248,7 +248,7 @@ body.page-home {
 				}
 			}
 			@include tablet_down {
-				& {@include image-background($image-fuel-bg-mobile,'center center','cover'); background-color:#000;}
+				& {@include image-background($image-fuel-bg-mobile,'center center','cover'); background-color:#040404;}
 				.text {@include center-horizontal(); text-align:center;}
 				p {@include center-horizontal();}
 				ul li {text-align:left;}
@@ -303,7 +303,6 @@ body.page-home {
 		
 		// Section: Strength
 		#strength {
-			& {@include image-background($image-strength-bg-desktop,'center center','auto 100%');}
 			.inner {display:block; background-color:rgba(0,0,0,0.5); @include center-horizontal();
 				h2, p {@include center-horizontal(); text-align:center;}
 				h2 {@include font('OswaldMediumItalic'); color:$color-yellow; text-transform:uppercase;}
@@ -315,7 +314,9 @@ body.page-home {
 					}
 				}
 			}
-			
+			@include desktop {
+				& {@include image-background($image-strength-bg-desktop,'center center','auto 100%'); background-color:#000;}
+			}
 			@include desktop_1280 {
 				.container {height:1030px;}
 				.inner {width:1200px; margin-top:280px; padding:60px 0 50px;
@@ -343,7 +344,7 @@ body.page-home {
 				}
 			}
 			@include tablet_down {
-				& {@include image-background($image-strength-bg-mobile,'center center','auto 100%');}
+				& {@include image-background($image-strength-bg-mobile,'center center','auto 100%'); background-color:#000;}
 				.inner {width:96%;}
 				.flexbox {
 					.box {
@@ -461,7 +462,7 @@ body.page-home {
 			img.logo {position:absolute;}
 			
 			@include desktop {
-				& {@include image-background($image-certified-bg-desktop,'center center','auto 100%');}
+				& {@include image-background($image-certified-bg-desktop,'center center','auto 100%'); background-color:#E6D74A;}
 				.text {position:absolute;}
 			}
 			@include desktop_1280 {
@@ -493,7 +494,7 @@ body.page-home {
 				img.logo {bottom:90px; right:40px; @include image-size($image-certified-nsf-logo,100px);}
 			}
 			@include tablet_down {
-				& {@include image-background($image-certified-bg-mobile,'center center','cover');}
+				& {@include image-background($image-certified-bg-mobile,'center center','cover'); background-color:#E6D74A;}
 				ul li {background-position:top 6px left!important;}
 			}
 			@include tablet {
@@ -546,7 +547,7 @@ body.page-home {
 			}
 			
 			@include desktop {
-				& {@include image-background($image-work-bg-desktop,'center center','auto 100%');}
+				& {@include image-background($image-work-bg-desktop,'center center','auto 100%'); background-color:#161C1A;}
 				.inner {@include center-vertical();}
 			}
 			@include desktop_1280 {
@@ -566,7 +567,7 @@ body.page-home {
 				}
 			}
 			@include tablet_down {
-				& {@include image-background($image-work-bg-mobile,'center center','cover');}
+				& {@include image-background($image-work-bg-mobile,'center center','cover'); background-color:#161C1A;}
 			}
 			@include tablet {
 				.container {height:650px;}

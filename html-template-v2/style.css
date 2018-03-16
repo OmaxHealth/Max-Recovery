@@ -83,7 +83,7 @@ html, body { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-tap-hi
   .flexcolumn .column, .flexcolumn > .container .column { width: 100%; } }
 
 .button { display: block; text-align: center; background: -webkit-gradient(linear, left top, left bottom, from(#fffe11), to(#efe100)); background: linear-gradient(to bottom, #fffe11 0%, #efe100 100%); border-bottom: 2px solid #bc990c; border-left: 1px solid #dfcb24; border-right: 1px solid #dfcb24; overflow: hidden; cursor: pointer; }
-.button span { position: relative; font-family: 'Oswald',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: normal; font-style: italic; text-transform: uppercase; letter-spacing: 0.05em; color: #333333; }
+.button span { position: relative; font-family: 'Oswald',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: normal; font-style: italic; text-transform: uppercase; color: #333333; }
 .button:hover { background: none #fffe11; }
 @media (min-width: 1024px) { .button { height: 68px; width: 240px; border-radius: 4px; }
   .button span { font-size: 28px; line-height: 28px; top: calc((100% - 28px)/2); } }
@@ -95,6 +95,7 @@ html, body { -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-tap-hi
 @media (max-width: 539px) { .button { height: 56px; width: 200px; border-radius: 4px; }
   .button span { font-size: 24px; line-height: 24px; top: calc((100% - 24px)/2); } }
 
+header { position: fixed; top: 0px; left: 0px; right: 0px; z-index: 100; }
 header .upper { position: relative; }
 header .upper:before { content: ""; width: 50%; position: absolute; top: 0px; bottom: 0px; left: 0px; z-index: -1; background-color: #4D4D4D; }
 header .upper:after { content: ""; width: 50%; position: absolute; top: 0px; bottom: 0px; right: 0px; z-index: -1; background-color: #ebebeb; }
@@ -128,17 +129,94 @@ header .lower span { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-
   header .upper .container a.phone { top: 4px; right: 185px; width: 36px; height: 57.6px; }
   header .upper .container a.button { top: 7.5px; right: 15px; width: 160px; height: 50px; }
   header .upper .container a.button span { font-size: 18px; line-height: 18px; top: calc((100% - 18px)/2); }
-  header .lower .container { height: 34px; text-align: center; }
-  header .lower .container span { font-size: 18px; line-height: 34px; } }
+  header .lower .container { height: 32px; text-align: center; }
+  header .lower .container span { font-size: 18px; line-height: 32px; } }
 @media (max-width: 539px) { header .upper .container { height: 45px; }
   header .upper .container:before { height: 45px; left: 60px; }
   header .upper a.logo { top: 3px; left: 15px; width: 120px; height: 38.57143px; }
   header .upper a.phone { top: 2px; right: 125px; width: 26px; height: 41.6px; }
   header .upper a.button { top: 7.5px; right: 15px; width: 100px; height: 30px; }
   header .upper a.button span { font-size: 12px; line-height: 12px; top: calc((100% - 12px)/2); }
-  header .lower .container { height: 22px; text-align: center; }
-  header .lower .container span { font-size: 12px; line-height: 22px; } }
+  header .lower .container { height: 25px; text-align: center; }
+  header .lower .container span { font-size: 12px; line-height: 25px; } }
 
+@media (min-width: 1024px) { main { padding-top: 130px; } }
+@media (min-width: 768px) and (max-width: 1023px) { main { padding-top: 145px; } }
+@media (min-width: 540px) and (max-width: 767px) { main { padding-top: 100px; } }
+@media (max-width: 539px) { main { padding-top: 70px; } }
+main #legal h1 { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 400; font-style: normal; color: #000; text-align: center; display: block; margin-left: auto; margin-right: auto; }
+main #legal h2 { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 600; font-style: normal; text-transform: uppercase; }
+main #legal h3 { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 500; font-style: normal; }
+main #legal p, main #legal li { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 400; font-style: normal; }
+main #legal p strong, main #legal li strong { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 500; font-style: normal; }
+main #legal ul { margin-left: 20px; }
+main #legal ul li { list-style-type: disc; }
+main #legal ol { margin-left: 20px; }
+main #legal ol li { list-style-type: decimal; }
+main #legal a { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 400; font-style: normal; color: #005596; text-decoration: underline; }
+@media (min-width: 768px) { main #legal h1 { margin-top: 40px; margin-bottom: 20px; }
+  main #legal h2 { margin: 20px 0; }
+  main #legal h3 { font-size: 16px; line-height: 16px; }
+  main #legal p { font-size: 16px; line-height: 22px; margin-bottom: 15px; }
+  main #legal ul, main #legal ol { margin-bottom: 15px; }
+  main #legal ul li, main #legal ol li { font-size: 16px; line-height: 22px; margin-bottom: 5px; } }
+@media (min-width: 1024px) { main #legal h1 { font-size: 42px; line-height: 42px; }
+  main #legal h2 { font-size: 20px; line-height: 20px; } }
+@media (min-width: 768px) and (max-width: 1023px) { main #legal h1 { font-size: 32px; line-height: 32px; }
+  main #legal h2 { font-size: 18px; line-height: 18px; } }
+@media (max-width: 767px) { main #legal h1 { font-size: 26px; line-height: 26px; margin-top: 20px; margin-bottom: 20px; }
+  main #legal h2 { font-size: 16px; line-height: 16px; margin-bottom: 10px; }
+  main #legal p { font-size: 14px; line-height: 20px; margin-bottom: 10px; }
+  main #legal ul, main #legal ol { margin-bottom: 10px; }
+  main #legal ul li, main #legal ol li { font-size: 14px; line-height: 20px; margin-bottom: 5px; } }
+main #wp-content h1 { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 400; font-style: normal; color: #000; text-align: center; display: block; margin-left: auto; margin-right: auto; }
+main #wp-content h2 { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 600; font-style: normal; text-transform: uppercase; }
+main #wp-content h3 { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 500; font-style: normal; }
+main #wp-content p, main #wp-content li { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 400; font-style: normal; }
+main #wp-content p strong, main #wp-content li strong { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 500; font-style: normal; }
+main #wp-content ul { margin-left: 20px; }
+main #wp-content ul li { list-style-type: disc; }
+main #wp-content ol { margin-left: 20px; }
+main #wp-content ol li { list-style-type: decimal; }
+main #wp-content a { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 400; font-style: normal; color: #005596; text-decoration: underline; }
+@media (min-width: 768px) { main #wp-content h1 { margin-top: 40px; margin-bottom: 20px; }
+  main #wp-content h2 { margin: 20px 0; }
+  main #wp-content h3 { font-size: 16px; line-height: 16px; }
+  main #wp-content p { font-size: 16px; line-height: 22px; margin-bottom: 15px; }
+  main #wp-content ul, main #wp-content ol { margin-bottom: 15px; }
+  main #wp-content ul li, main #wp-content ol li { font-size: 16px; line-height: 22px; margin-bottom: 5px; } }
+@media (min-width: 1024px) { main #wp-content h1 { font-size: 42px; line-height: 42px; }
+  main #wp-content h2 { font-size: 20px; line-height: 20px; } }
+@media (min-width: 768px) and (max-width: 1023px) { main #wp-content h1 { font-size: 32px; line-height: 32px; }
+  main #wp-content h2 { font-size: 18px; line-height: 18px; } }
+@media (max-width: 767px) { main #wp-content h1 { font-size: 26px; line-height: 26px; margin-top: 20px; margin-bottom: 20px; }
+  main #wp-content h2 { font-size: 16px; line-height: 16px; margin-bottom: 10px; }
+  main #wp-content p { font-size: 14px; line-height: 20px; margin-bottom: 10px; }
+  main #wp-content ul, main #wp-content ol { margin-bottom: 10px; }
+  main #wp-content ul li, main #wp-content ol li { font-size: 14px; line-height: 20px; margin-bottom: 5px; } }
+
+footer { background-color: #fafafa; }
+footer .container { text-align: center; }
+footer p { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 400; font-style: normal; font-size: 12px; line-height: 16px; color: #454545; margin-bottom: 10px; }
+footer p.disclaimer { border: 1px solid #454545; padding: 10px; display: block; margin-left: auto; margin-right: auto; display: inline-block; }
+footer p.copyright { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 500; font-style: normal; }
+footer p:last-of-type { margin-bottom: 0px; }
+footer nav { margin-bottom: 20px; }
+footer nav a { font-family: 'Montserrat',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 600; font-style: normal; font-size: 14px; line-height: 14px; color: #454545; }
+footer nav a:not(:last-of-type):after { content: "|"; padding: 0 5px 0 10px; opacity: 0.5; }
+footer nav a:hover { color: #005596; }
+footer nav a:hover:after { color: #454545; }
+@media (min-width: 1024px) { footer .container { padding: 40px 0; } }
+@media (min-width: 768px) and (max-width: 1023px) { footer .container { padding: 30px 0; }
+  footer p.disclaimer { max-width: 600px; } }
+@media (max-width: 767px) { footer .container { padding: 20px 15px; } }
+@media (min-width: 540px) and (max-width: 767px) { footer p.disclaimer { max-width: 500px; } }
+@media (max-width: 539px) { footer nav { max-width: 290px; display: block; margin-left: auto; margin-right: auto; }
+  footer nav a { display: inline-block; }
+  footer nav a:nth-of-type(2):after { display: none; }
+  footer nav a:nth-of-type(3), footer nav a:nth-of-type(4) { margin-top: 5px; } }
+
+body.page-home main #hero .upper { background-color: #000; }
 body.page-home main #hero .upper h1 { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: normal; color: #fff; display: block; margin-left: auto; margin-right: auto; text-align: center; }
 body.page-home main #hero .upper h1 strong { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: normal; color: #F9E814; text-transform: uppercase; }
 body.page-home main #hero .upper h2 { display: block; margin-left: auto; margin-right: auto; text-align: center; text-transform: uppercase; }
@@ -245,7 +323,7 @@ body.page-home main #fuel p { font-family: 'Roboto Condensed',Helvetica,Arial,sa
 body.page-home main #fuel ul li { display: block; font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; color: #fff; background-image: url("images/fuel-bullet.svg"); background-repeat: no-repeat; background-position: left top; background-size: auto auto; }
 body.page-home main #fuel ul li:last-of-type { margin-bottom: 0px !important; }
 body.page-home main #fuel ul li strong { display: block; font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: normal; color: #F9E814; }
-@media (min-width: 1024px) { body.page-home main #fuel { background-image: url("images/fuel-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; background-color: #000; }
+@media (min-width: 1024px) { body.page-home main #fuel { background-image: url("images/fuel-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; background-color: #040404; }
   body.page-home main #fuel .text { position: absolute; } }
 @media (min-width: 1280px) { body.page-home main #fuel .container { height: 850px; }
   body.page-home main #fuel .text { top: 100px; right: 0px; width: 630px; }
@@ -263,7 +341,7 @@ body.page-home main #fuel ul li strong { display: block; font-family: 'Roboto Co
   body.page-home main #fuel .text p { font-size: 20px; line-height: 28px; margin-bottom: 70px; }
   body.page-home main #fuel .text ul li { min-height: 60px; background-repeat: no-repeat; background-position: left top; background-size: 60px 60px; font-size: 22px; line-height: 22px; padding-left: 70px; padding-top: 2px; margin-bottom: 32px; }
   body.page-home main #fuel .text ul li strong { font-size: 22px; line-height: 22px; margin-bottom: 4px; } }
-@media (max-width: 1023px) { body.page-home main #fuel { background-image: url("images/fuel-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; background-color: #000; }
+@media (max-width: 1023px) { body.page-home main #fuel { background-image: url("images/fuel-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; background-color: #040404; }
   body.page-home main #fuel .text { display: block; margin-left: auto; margin-right: auto; text-align: center; }
   body.page-home main #fuel p { display: block; margin-left: auto; margin-right: auto; }
   body.page-home main #fuel ul li { text-align: left; } }
@@ -291,7 +369,6 @@ body.page-home main #fuel ul li strong { display: block; font-family: 'Roboto Co
   body.page-home main #fuel .text p { font-size: 14px; line-height: 18px; margin-bottom: 20px; }
   body.page-home main #fuel .text ul li { min-height: 40px; background-repeat: no-repeat; background-position: left top; background-size: 40px 40px; font-size: 14px; line-height: 14px; padding-left: 50px; padding-top: 2px; margin-bottom: 10px; }
   body.page-home main #fuel .text ul li strong { font-size: 16px; line-height: 16px; margin-bottom: 2px; } }
-body.page-home main #strength { background-image: url("images/strength-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
 body.page-home main #strength .inner { display: block; background-color: rgba(0, 0, 0, 0.5); display: block; margin-left: auto; margin-right: auto; }
 body.page-home main #strength .inner h2, body.page-home main #strength .inner p { display: block; margin-left: auto; margin-right: auto; text-align: center; }
 body.page-home main #strength .inner h2 { font-family: 'Oswald',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 500; font-style: italic; color: #F9E814; text-transform: uppercase; }
@@ -300,6 +377,7 @@ body.page-home main #strength .inner .flexbox { margin-left: auto; margin-right:
 body.page-home main #strength .inner .flexbox .box { text-align: center; }
 body.page-home main #strength .inner .flexbox .box img.icon { display: block; margin-left: auto; margin-right: auto; }
 body.page-home main #strength .inner .flexbox .box h3 { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: normal; color: #fff; text-transform: uppercase; }
+@media (min-width: 1024px) { body.page-home main #strength { background-image: url("images/strength-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; background-color: #000; } }
 @media (min-width: 1280px) { body.page-home main #strength .container { height: 1030px; }
   body.page-home main #strength .inner { width: 1200px; margin-top: 280px; padding: 60px 0 50px; }
   body.page-home main #strength .inner h2 { font-size: 64px; line-height: 64px; margin-bottom: 40px; }
@@ -316,7 +394,7 @@ body.page-home main #strength .inner .flexbox .box h3 { font-family: 'Roboto Con
   body.page-home main #strength .inner .flexbox .box { width: 160px; }
   body.page-home main #strength .inner .flexbox .box img.icon { width: 100px; height: 100px; margin-bottom: 30px; }
   body.page-home main #strength .inner .flexbox .box h3 { font-size: 16px; line-height: 20px; } }
-@media (max-width: 1023px) { body.page-home main #strength { background-image: url("images/strength-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
+@media (max-width: 1023px) { body.page-home main #strength { background-image: url("images/strength-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; background-color: #000; }
   body.page-home main #strength .inner { width: 96%; }
   body.page-home main #strength .flexbox .box h3 { display: block; margin-left: auto; margin-right: auto; }
   body.page-home main #strength .flexbox .box h3 br { display: none; } }
@@ -373,7 +451,7 @@ body.page-home main #certified .text h2 { font-family: 'Roboto Condensed',Helvet
 body.page-home main #certified .text p { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: normal; color: #000; }
 body.page-home main #certified .text ul li { position: relative; background-image: url("images/certified-bullet.png"); background-repeat: no-repeat; background-position: left center; background-size: auto auto; font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; color: #000; text-transform: uppercase; }
 body.page-home main #certified img.logo { position: absolute; }
-@media (min-width: 1024px) { body.page-home main #certified { background-image: url("images/certified-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
+@media (min-width: 1024px) { body.page-home main #certified { background-image: url("images/certified-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; background-color: #E6D74A; }
   body.page-home main #certified .text { position: absolute; } }
 @media (min-width: 1280px) { body.page-home main #certified .container { height: 730px; }
   body.page-home main #certified .text { width: 640px; top: 180px; left: 50px; }
@@ -393,7 +471,7 @@ body.page-home main #certified img.logo { position: absolute; }
   body.page-home main #certified .text ul li:nth-of-type(1) { font-size: 20px; line-height: 35px; }
   body.page-home main #certified .text ul li:last-of-type { margin-bottom: 0px; }
   body.page-home main #certified img.logo { bottom: 90px; right: 40px; width: 100px; height: 125px; } }
-@media (max-width: 1023px) { body.page-home main #certified { background-image: url("images/certified-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; }
+@media (max-width: 1023px) { body.page-home main #certified { background-image: url("images/certified-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; background-color: #E6D74A; }
   body.page-home main #certified ul li { background-position: top 6px left !important; } }
 @media (min-width: 768px) and (max-width: 1023px) { body.page-home main #certified .text { padding: 50px 40px; }
   body.page-home main #certified .text h2 { font-size: 72px; line-height: 72px; margin-bottom: 20px; }
@@ -422,7 +500,7 @@ body.page-home main #certified img.logo { position: absolute; }
 body.page-home main #work .inner { display: block; margin-left: auto; margin-right: auto; /*background-color:rgba(0,0,0,0.5);*/ }
 body.page-home main #work .inner h2 { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; color: #F9E814; text-align: center; text-transform: uppercase; }
 body.page-home main #work .inner h2 span { font-family: 'Roboto Condensed',Helvetica,Arial,sans-serif; font-style: normal; font-weight: 700; font-style: italic; display: block; color: #fff; }
-@media (min-width: 1024px) { body.page-home main #work { background-image: url("images/work-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; }
+@media (min-width: 1024px) { body.page-home main #work { background-image: url("images/work-bg-desktop.jpg"); background-repeat: no-repeat; background-position: center center; background-size: auto 100%; background-color: #161C1A; }
   body.page-home main #work .inner { position: relative; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); } }
 @media (min-width: 1280px) { body.page-home main #work .container { height: 680px; }
   body.page-home main #work .inner h2 { font-size: 76px; line-height: 76px; }
@@ -430,7 +508,7 @@ body.page-home main #work .inner h2 span { font-family: 'Roboto Condensed',Helve
 @media (min-width: 1024px) and (max-width: 1279px) { body.page-home main #work .container { height: 550px; }
   body.page-home main #work .inner h2 { font-size: 60px; line-height: 60px; }
   body.page-home main #work .inner h2 span { font-size: 52px; line-height: 52px; } }
-@media (max-width: 1023px) { body.page-home main #work { background-image: url("images/work-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; } }
+@media (max-width: 1023px) { body.page-home main #work { background-image: url("images/work-bg-mobile.jpg"); background-repeat: no-repeat; background-position: center center; background-size: cover; background-color: #161C1A; } }
 @media (min-width: 768px) and (max-width: 1023px) { body.page-home main #work .container { height: 650px; }
   body.page-home main #work .inner { margin-top: 360px; }
   body.page-home main #work .inner h2 { font-size: 80px; line-height: 80px; }
@@ -599,10 +677,14 @@ body.page-product main #mainCTA .flexbox .box a.button { display: block; margin-
   body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .priceGroup .supply { font-size: 34px; line-height: 34px; bottom: 20px; }
   body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .priceGroup .price { font-size: 76px; line-height: 76px; padding-left: 5px; padding-right: 15px; }
   body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .priceGroup .shipping { font-size: 32px; line-height: 32px; bottom: 20px; } }
+@media (max-width: 767px) { body.page-product main #mainCTA { background: none; }
+  body.page-product main #mainCTA .offers:before { display: none; }
+  body.page-product main #mainCTA .flexbox .box { border-left: none !important; border-right: none !important; -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); }
+  body.page-product main #mainCTA .flexbox .box .productImage { background-repeat: no-repeat; background-position: center center; background-size: cover; } }
 @media (min-width: 540px) and (max-width: 767px) { body.page-product main #mainCTA .heading h1 { font-size: 30px; line-height: 54px; }
   body.page-product main #mainCTA .flexbox .box { border: 2px solid #000; margin-bottom: 20px !important; }
   body.page-product main #mainCTA .flexbox .box h2 { font-size: 40px; line-height: 54px; bottom: 5px; }
-  body.page-product main #mainCTA .flexbox .box .productImage { height: 200px; background-repeat: no-repeat; background-position: center center; background-size: cover; }
+  body.page-product main #mainCTA .flexbox .box .productImage { height: 200px; }
   body.page-product main #mainCTA .flexbox .box .text { padding: 10px 0 20px; }
   body.page-product main #mainCTA .flexbox .box .text .priceGroup { width: 480px; padding-bottom: 10px; margin-bottom: 10px; }
   body.page-product main #mainCTA .flexbox .box .text .gift { font-size: 22px; line-height: 26px; margin-bottom: 4px; }
@@ -624,8 +706,8 @@ body.page-product main #mainCTA .flexbox .box a.button { display: block; margin-
 @media (max-width: 539px) { body.page-product main #mainCTA .heading h1 { font-size: 20px; line-height: 40px; }
   body.page-product main #mainCTA .flexbox .box { border: 2px solid #000; margin-bottom: 20px !important; }
   body.page-product main #mainCTA .flexbox .box h2 { font-size: 28px; line-height: 40px; bottom: 2px; }
-  body.page-product main #mainCTA .flexbox .box .productImage { height: 200px; background-repeat: no-repeat; background-position: center center; background-size: cover; }
-  body.page-product main #mainCTA .flexbox .box .text { padding: 10px 0 20px; }
+  body.page-product main #mainCTA .flexbox .box .productImage { height: 140px; }
+  body.page-product main #mainCTA .flexbox .box .text { padding: 6px 0 10px; }
   body.page-product main #mainCTA .flexbox .box .text .priceGroup { width: 320px; padding-bottom: 10px; margin-bottom: 10px; }
   body.page-product main #mainCTA .flexbox .box .text .gift { font-size: 16px; line-height: 18px; margin-bottom: 4px; }
   body.page-product main #mainCTA .flexbox .box .text .gift strong { font-size: 18px; line-height: 18px; }
@@ -633,16 +715,16 @@ body.page-product main #mainCTA .flexbox .box a.button { display: block; margin-
   body.page-product main #mainCTA .flexbox .box h3 { font-size: 20px; line-height: 30px; margin-bottom: 20px; }
   body.page-product main #mainCTA .flexbox .box a.button { width: 120px; height: 40px; margin-bottom: 20px; }
   body.page-product main #mainCTA .flexbox .box a.button span { font-size: 14px; line-height: 14px; top: calc((100% - 14px)/2); font-size: 14px; line-height: 14px; }
-  body.page-product main #mainCTA .flexbox .box:nth-of-type(1) .priceGroup .supply, body.page-product main #mainCTA .flexbox .box:nth-of-type(2) .priceGroup .supply { font-size: 16px; line-height: 16px; width: 90px; bottom: 2px; }
+  body.page-product main #mainCTA .flexbox .box:nth-of-type(1) .priceGroup .supply, body.page-product main #mainCTA .flexbox .box:nth-of-type(2) .priceGroup .supply { font-size: 16px; line-height: 16px; width: 90px; bottom: 0px; }
   body.page-product main #mainCTA .flexbox .box:nth-of-type(1) .priceGroup .price, body.page-product main #mainCTA .flexbox .box:nth-of-type(2) .priceGroup .price { font-size: 36px; line-height: 36px; padding-left: 0px; padding-right: 8px; }
-  body.page-product main #mainCTA .flexbox .box:nth-of-type(1) .priceGroup .shipping, body.page-product main #mainCTA .flexbox .box:nth-of-type(2) .priceGroup .shipping { font-size: 16px; line-height: 16px; bottom: 8px; }
+  body.page-product main #mainCTA .flexbox .box:nth-of-type(1) .priceGroup .shipping, body.page-product main #mainCTA .flexbox .box:nth-of-type(2) .priceGroup .shipping { font-size: 16px; line-height: 16px; bottom: 6px; }
   body.page-product main #mainCTA .flexbox .box:nth-of-type(3):after { top: -24px; right: 0px; width: 80px; height: 80px; }
   body.page-product main #mainCTA .flexbox .box:nth-of-type(3) h2 { padding-left: 22px; }
   body.page-product main #mainCTA .flexbox .box:nth-of-type(3) h2:before { top: 2px; width: 18px; height: 36px; }
-  body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .productImage:after { right: 10px; bottom: 60px; width: 46px; height: 46px; }
-  body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .priceGroup .supply { font-size: 16px; line-height: 16px; bottom: 10px; letter-spacing: -0.01em; }
+  body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .productImage:after { right: 20px; bottom: 30px; width: 46px; height: 46px; }
+  body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .priceGroup .supply { font-size: 16px; line-height: 16px; bottom: 8px; letter-spacing: -0.01em; }
   body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .priceGroup .price { font-size: 36px; line-height: 36px; padding-left: 0px; padding-right: 5px; }
-  body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .priceGroup .shipping { font-size: 16px; line-height: 16px; bottom: 10px; letter-spacing: -0.01em; } }
+  body.page-product main #mainCTA .flexbox .box:nth-of-type(3) .priceGroup .shipping { font-size: 16px; line-height: 16px; bottom: 6px; letter-spacing: -0.01em; } }
 body.page-product main #lowerTagline { background-color: #4D4D4D; }
 body.page-product main #lowerTagline h2 { display: block; margin-left: auto; margin-right: auto; text-align: center; text-transform: uppercase; }
 body.page-product main #lowerTagline h2 * { display: block; }
