@@ -47,22 +47,22 @@ main#home {
 			}
 		}
 		@include desktop_1280 {
-			.upper {@include image-background-style('top center','auto 560px');
-				.container {height:560px;}
-				h2 {margin-top:30px;
-					.ln1 {@include font-size(58px); margin-bottom:5px;}
-					.ln2 {@include font-size(62px); margin-bottom:5px;}
-					.ln3 {@include font-size(68px);}
-					.ln4 {@include font-size(104px);}	
+			.upper {@include image-background-style('top center','auto 500px');
+				.container {height:500px;}
+				h2 {margin-top:20px;
+					.ln1 {@include font-size(56px); margin-bottom:2px;}
+					.ln2 {@include font-size(60px); margin-bottom:2px;}
+					.ln3 {@include font-size(66px);}
+					.ln4 {@include font-size(102px);}	
 				}
 			}
 			.lower .r1 {
 				.container {height:150px;}
 				.productGroup {height:350px; bottom:10px;
-					img.product {bottom:0px; left:100px; @include image-size($image-product-box,500px);}
+					img.product {bottom:0px; left:140px; @include image-size($image-product-box,460px);}
 					img.seal {bottom:0px; right:140px; @include image-size($image-product-seal,130px);}	
 				}
-				a.button {right:330px; top:40px;}
+				a.button {right:350px; top:40px;}
 			}
 			.lower .r2 {
 				.flexbox {margin:20px 0;
@@ -77,10 +77,10 @@ main#home {
 		}
 		@include desktop_1024 {
 			.upper {@include image-background-style('top center','auto 450px');
-				.container {height:450px;}
-				h2 {margin-top:30px;
-					.ln1 {@include font-size(46px); margin-bottom:5px;}
-					.ln2 {@include font-size(50px); margin-bottom:5px;}
+				.container {height:420px;}
+				h2 {margin-top:15px;
+					.ln1 {@include font-size(46px); margin-bottom:2px;}
+					.ln2 {@include font-size(50px); margin-bottom:2px;}
 					.ln3 {@include font-size(54px);}
 					.ln4 {@include font-size(82px);}	
 				}
@@ -88,7 +88,7 @@ main#home {
 			.lower .r1 {
 				.container {height:130px;}
 				.productGroup {height:350px; bottom:10px;
-					img.product {bottom:0px; left:60px; @include image-size($image-product-box,410px);}
+					img.product {bottom:0px; left:80px; @include image-size($image-product-box,380px);}
 					img.seal {bottom:0px; right:80px; @include image-size($image-product-seal,110px);}	
 				}
 				a.button {bottom:30px; right:240px;}

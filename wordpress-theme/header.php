@@ -26,7 +26,7 @@
 	<div class="upper">
 		<div class="container">
 			<a class="logo" href="<?php bloginfo('url'); ?>"><span>Omax3</span></a>
-			<a class="phone" href="tel:555-555-1212"><span>555-555-1212</span></a>
+			<!--<a class="phone" href="tel:555-555-1212"><span>555-555-1212</span></a>-->
 			<a class="button" href="<?php bloginfo('url'); ?>/select-your-plan/"><span>Order Now</span></a>
 		</div>
 	</div>

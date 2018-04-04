@@ -77,17 +77,17 @@ header {
 	
 	@include desktop {
 		.upper {
-			.container {height:95px;
-				&:before {height:95px; left:300px;}
-				a.logo {top:2.5px; left:5px; @include image-size($image-header-logo,280px);}
+			.container {height:80px;
+				&:before {height:80px; left:300px;}
+				a.logo {top:3px; left:5px; @include image-size($image-header-logo,230px);}
 				a.phone {display:none;}
-				a.button {top:14px; right:5px; width:220px; height:68px;
-					span {@include button-text(24px);}
+				a.button {top:10px; right:5px; width:190px; height:60px;
+					span {@include button-text(22px);}
 				}
 			}
 		}
-		.lower .container {height:35px;
-			span {@include font-size(20px,35px);}
+		.lower .container {height:30px;
+			span {@include font-size(20px,33px);}
 		}
 	}
 	@include tablet {
@@ -140,7 +140,7 @@ header {
 
 main {
 	// Global: Fixed Navigation Spacer 
-	@include desktop {padding-top:130px;}
+	@include desktop {padding-top:110px;}
 	@include tablet {padding-top:145px;}
 	@include mobile_540 {padding-top:100px;}
 	@include mobile_360 {padding-top:70px;}
