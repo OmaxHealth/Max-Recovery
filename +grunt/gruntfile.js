@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 	require('time-grunt')(grunt);
 	
 	// Global: Defines the location of the HTML build folder
-	var html_source_folder = "../html-template-v2";
+	var html_source_folder = "../html-template";
 
 	// Global Project Config
 	grunt.initConfig({

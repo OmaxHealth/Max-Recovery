@@ -603,7 +603,7 @@ main#home {
 		}
 		.price {@include center-horizontal();
 			* {text-align:center;}
-			.ln1 {@include font('RobotoBold'); color:$color-yellow;}
+			.ln1 {@include font('RobotoBold'); color:$color-yellow; text-transform:uppercase;}
 			.ln2 {position:absolute; left:0px; right:0px; bottom:0px; @include font('Montserrat'); color:#fff; text-transform:uppercase;}
 		}
 		
@@ -619,7 +619,7 @@ main#home {
 				img.seal {right:120px; bottom:10px; @include image-size($image-product-seal,150px);}
 			}
 			a.button {bottom:70px; right:350px;}
-			.price {bottom:180px; right:345px;  padding-bottom:15px;
+			.price {bottom:180px; right:325px;  padding-bottom:20px;
 				.ln1 {@include font-size(40px);}
 				.ln2 {@include font-size(18px);}
 			}
@@ -632,7 +632,7 @@ main#home {
 				img.seal {bottom:20px; right:90px; @include image-size($image-product-seal,130px);}
 			}
 			a.button {bottom:70px; right:250px;}
-			.price {top:200px; right:270px; padding-bottom:12px;
+			.price {top:200px; right:255px; padding-bottom:15px;
 				.ln1 {@include font-size(32px);}
 				.ln2 {@include font-size(15px);}
 			}
@@ -665,7 +665,7 @@ main#home {
 				img.product {top:0px; left:0px; @include image-size($image-product-box,400px);}
 				img.seal {bottom:0px; left:0px; @include image-size($image-product-seal,100px);}
 			}
-			.price {width:300px; padding-bottom:14px; margin-bottom:30px;
+			.price {width:300px; padding-bottom:15px; margin-bottom:30px;
 				.ln1 {@include font-size(36px);}
 				.ln2 {@include font-size(16px);}
 			}
@@ -677,7 +677,7 @@ main#home {
 				img.product {top:0px; left:0px; @include image-size($image-product-box,260px);}
 				img.seal {bottom:0px; left:0px; @include image-size($image-product-seal,75px);}
 			}
-			.price {width:200px; padding-bottom:12px; margin-bottom:20px;
+			.price {width:200px; padding-bottom:15px; margin-bottom:20px;
 				.ln1 {@include font-size(24px);}
 				.ln2 {@include font-size(14px);}
 			}

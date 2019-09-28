@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_template_part('content','header'); ?>
 <?php the_post(); ?>
 
 <main id="select-plan">
@@ -19,7 +19,7 @@
 						<div class="productImage"></div>
 						<div class="text">
 							<div class="priceGroup">
-								<span class="supply">30-day supply one-time</span>
+								<span class="supply">30-day supply <br/>(one-time)</span>
 								<span class="price">$59.95</span>
 								<span class="shipping">FREE SHIPPING</span>
 							</div>
@@ -27,14 +27,14 @@
 							<span class="check">Omega-3 for Optimal Life eBook</span>
 						</div>
 						<h3>One-Time</h3>
-						<a class="button" href="#"><span>Buy Now</span></a>
+						<a class="button" href="https://max.omaxhealth.com/cart/buybutton.php?id=u5732QaNv0-s8N23L5-3_A"><span>Buy Now</span></a>
 					</div>
 					<div class="box">
 						<h2>Weekend Warrior</h2>
 						<div class="productImage"></div>
 						<div class="text">
 							<div class="priceGroup">
-								<span class="supply">60-day supply auto-ship</span>
+								<span class="supply">60-day supply <br/>(auto-ship)</span>
 								<span class="price">$79.99</span>
 								<span class="shipping">FREE SHIPPING</span>
 							</div>
@@ -42,14 +42,14 @@
 							<span class="check">Omega-3 for Optimal Life eBook</span>
 						</div>
 						<h3>33% Savings</h3>
-						<a class="button" href="#"><span>Buy Now</span></a>
+						<a class="button" href="https://max.omaxhealth.com/cart/buybutton.php?id=ahS3Tw6UKUud0zGNdX4InQ"><span>Buy Now</span></a>
 					</div>
 					<div class="box">
 						<h2>Spartan</h2>
 						<div class="productImage"></div>
 						<div class="text">
 							<div class="priceGroup">
-								<span class="supply"><strong>6-month supply</strong></span>
+								<span class="supply"><strong>6-month supply <br/>(one-time)</strong></span>
 								<span class="price">$199</span>
 								<span class="shipping">FREE <strong>RUSH</strong> SHIPPING</span>
 							</div>
@@ -57,8 +57,8 @@
 							<span class="check">Omax Water Bottle & Sport Towel</span>
 							<span class="check">Omega-3 for Optimal Life eBook</span>
 						</div>
-						<h3>45% Savings</h3>
-						<a class="button" href="#"><span>Buy Now</span></a>
+						<h3>50% Savings</h3>
+						<a class="button" href="https://max.omaxhealth.com/cart/buybutton.php?id=-JLMia40zUuquSgE2NeUOg"><span>Buy Now</span></a>
 					</div>
 				</div>
 			</div>			
@@ -78,4 +78,4 @@
 			
 </main>
 
-<?php get_footer(); ?>
+<?php get_template_part('content','footer'); ?>

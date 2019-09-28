@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_template_part('content','header'); ?>
 <?php the_post(); ?>
 
 <main id="home">
@@ -118,7 +118,7 @@
 				<img class="seal" src="<?php bloginfo('template_directory'); ?>/images/product-seal.png" alt="100% Money Back Guarantee" />
 			</div>
 			<div class="price">
-				<span class="ln1">Save over 40%*</span>
+				<span class="ln1">Save up to 50%*</span>
 				<span class="ln2">+FREE SHIPPING</span>
 			</div>
 			<a class="button" href="<?php bloginfo('url'); ?>/select-your-plan/"><span>Order Now</span></a>
@@ -127,4 +127,4 @@
 	
 </main>
 
-<?php get_footer(); ?>
+<?php get_template_part('content','footer'); ?>

@@ -1,7 +1,7 @@
-<?php get_header(); ?>
+<?php get_template_part('content','header'); ?>
 <?php the_post(); ?>
-<main id="legal">
 
+<main id="legal">
 	<section>
 		<div class="container">
 			<h1>Terms &amp; Conditions</h1>
@@ -15,7 +15,7 @@
 			
 			<h3>No Commitment $59.95</h3>
 			<p>Pay $59.95 for a 1 month supply (60 count box) of Omax3 Max Recovery, plus you'll get the Omega-3 for Life eBook.</p>
-			<p>*60-day money back guarantee applies to your first order of Omax3 Ultra-Pure, less return shipping & handling fees.</p>
+			<p>*60-day money back guarantee applies to your first order of Omax3 Max Recovery, less return shipping & handling fees.</p>
 			<p>This website and all pages within this website located at www.omaxhealth.com (this "Site") is owned and operated by Omax Health, Inc. ("Company") and provides website features and other products and services to you when you visit, shop or purchase items from this Site, use or access this Site from your mobile devices, or use software. By using Company's products and services, including Omax3 properties, you agree to these conditions. Please read them carefully. You should also carefully review our Privacy Policy before placing an order for goods or services through this site. By placing an order on our site, you are agreeing to an arbitration clause below.</p>
 			<p>By accessing or using this Site, mobile application or other Company product or service on any computer, mobile phone, tablet, console or other device (collectively, "Device"), or by any other means, you acknowledge and agree that you have read, understand and agree to be bound by these Terms and Conditions and by any applicable law.</p>
 			<p>Company may change these Terms and Conditions at any time without notice. When we make changes, we will post them here. If you do not agree to these Terms and Conditions, please do not use this Site or any Company products or services, and please promptly exit this Site.</p>
@@ -33,7 +33,7 @@
 			
 			<h2>48 CONTIGUOUS U.S.</h2>
 			<p>Ground: $7.95 (7-10 business days)<br>Rush: $15.95 (3-5 business days)</p>
-			<p>We also ship to: Alaska, Hawaii, Puerto Rico, Guam, Northern Mariana Islands, U.S. Virgin Islands, and American Samoa, and Canada.  These orders will incur an additional surcharge of $9.95.  </p>
+			<!--<p>We also ship to: Alaska, Hawaii, Puerto Rico, Guam, Northern Mariana Islands, U.S. Virgin Islands, and American Samoa, and Canada.  These orders will incur an additional surcharge of $9.95.</p>-->
 			<p>*All delivery times above are based on average in-transit time, after the order has been processed by our fulfillment warehouse. Orders are processed during EST business hours Monday - Friday.</p>
 			<p>All shipping prices are quoted in United States dollars. No C.O.D. orders can be accepted.</p>
 			<p>The posted shipping time frame is contingent upon credit card approval and may be delayed should we experience difficulties in obtaining authorization or during holidays.</p>
@@ -67,7 +67,7 @@
 			<p>All pricing for the products and services available on our site is subject to change. For all of our prices and products, we reserve the right to make adjustments due to changing market conditions, product discontinuation, manufacturer price changes, errors in advertisements and other extenuating circumstances.</p>
 			
 			<h2>INTERNATIONAL ORDERS</h2>
-			<p>Omax Cognitive Boost $19.95 First Box Offer is not available for International Shipping, however, you can purchase Omax Cognitive Boost at <a target="_blank" href="https://omaxhealth.com">omaxhealth.com</a>. Omax Health has partnered with a trusted third-party company, International Checkout, to fulfill orders for our international customers.</p>
+			<p>Omax3 Max Recovery $19.95 First Box Offer is not available for International Shipping, however, you can purchase Omax3 Max Recovery at <a target="_blank" href="https://omaxhealth.com">omaxhealth.com</a>. Omax Health has partnered with a trusted third-party company, International Checkout, to fulfill orders for our international customers.</p>
 			
 			<h2>WHICH COUNTRIES DO YOU SHIP TO?</h2>
 			<p>International shipping is currently available WORLDWIDE. Our third party vendor, International Checkout, will ship to all destinations around the world including APO / FPO addresses.</p>
@@ -147,11 +147,11 @@
 			<p>Omax Health, Inc.<br>50 West Bridge Street<br>New Hope, PA 18938<br>USA</p>
 			
 			<h2>QUESTIONS AND CONTACT INFORMATION</h2>
-			<p><a href="mailto:customercare@omax3.com">customercare@omax3.com</a><br><a href="phone:1-800-765-6691">1-800-765-6691</a><span> (M-F, 8am to 7pm EST)</span></p>
+			<p><a href="mailto:care@omaxhealth.com">care@omaxhealth.com</a><br><a href="phone:1-800-765-6691">1-800-765-6691</a><span> (M-F, 8am to 7pm EST)</span></p>
 			<p><strong>Revised 2/5/18</strong></p>
 			<p>&copy;Omax Health, Inc. <script>document.write(new Date().getFullYear())</script></p>
 		</div>
 	</section>
 			
 </main>	
-<?php get_footer(); ?>
+<?php get_template_part('content','footer'); ?>

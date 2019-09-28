@@ -1,0 +1,117 @@
+// Page: Contact Us
+main#contact-us {
+	
+	h1 {@include font('OswaldMedium'); color:#000; text-transform:uppercase; text-align:center; @include center-horizontal();}
+	h2 {@include font('OswaldSemiBold'); color:#000;}
+	.flexcolumn {margin-left:auto; margin-right:auto;}
+	.links {display:block;
+		a {@include font('MontserratRegular'); color:#333; display:block;
+			&:before {content:""; display:inline-block; width:10px; height:10px; background-color:$color-yellow; margin-right:10px;}
+			&:hover {text-decoration:underline;}
+		}
+	}
+	
+	@include tablet_up {
+		.flexcolumn {width:750px; margin-bottom:40px;
+			.column {width:50%;
+				&:first-of-type {margin-right:40px;}
+				&:last-of-type {margin-left:40px;}
+			}
+		}
+	}	
+	@include desktop {
+		h1 {@include font-size(42px); margin:40px 0;}
+		h2 {@include font-size(22px); margin-bottom:16px;}
+		.links {padding-left:10px;
+			a {@include font-size(16px); margin-bottom:16px;}
+		}
+	}
+	@include tablet {
+		h1 {@include font-size(36px); margin:30px 0;}
+		h2 {@include font-size(22px); margin-bottom:16px;}
+		.links {padding-left:10px;
+			a {@include font-size(16px); margin-bottom:16px;}
+		}
+	}	
+	@include mobile {
+		h1 {@include font-size(26px); margin:20px 0;}
+		h2 {@include font-size(22px); margin-bottom:16px;}
+		.flexcolumn {margin-bottom:20px;
+			.column:last-of-type {margin-top:20px;}
+		}
+		.links {padding-left:10px;
+			a {@include font-size(16px); margin-bottom:16px;}
+		}
+	}
+	@include mobile_540 {
+		.flexcolumn {width:480px;}
+	}
+	@include mobile_360 {
+		.flexcolumn {width:330px;}
+	}
+	
+		
+
+	// Contact Form 7 Overrides
+	input::placeholder {
+		color: rgb(88,88,88);
+		font-size:16px;
+	}
+	textarea::placeholder {
+		color: rgb(88,88,88);
+		font-size:16px;
+	}
+	.wpcf7-not-valid-tip{
+		@include font('MontserratRegular',12px);
+		color:red;
+		padding: 4px 8px;
+	}
+	.wpcf7-response-output{
+		@include font('MontserratRegular',14px);
+		color: #000;
+		border: 2px solid #333;
+		padding: 16px;
+	}
+	input {
+		@include font('MontserratRegular',16px,50px);
+		height: 50px;
+		padding: 0 15px;
+		display: block;
+		width: 100%;
+		border: 1px solid #e3e3e3;
+		color: #000;
+		border-radius: 5px;
+		-webkit-appearance: none;
+	}
+	textarea {
+		@include font('MontserratRegular',16px);
+		padding: 8px 15px;
+		height:120px;
+		display: block;
+		width: 100%;
+		border: 1px solid #e3e3e3;
+		color: #000;
+		border-radius: 5px;
+		-webkit-appearance: none;
+	}
+	.wpcf7-submit {
+		@include font('OswaldBold',22px); font-style:italic; text-transform:uppercase; 
+		background:linear-gradient(to bottom, #fffe11 0%,#efe100 100%);
+		border-bottom:2px solid #bc990c; border-left:1px solid #dfcb24; border-right:1px solid #dfcb24; 
+		color:#333;
+		width:150px;
+		margin:auto;
+		border-radius: 0px;
+		cursor:pointer;
+		border:none;
+	}
+	.wpcf7-submit:hover {
+		background:none $color-red;
+		color:#fff;
+	}
+	.wpcf7-form-control:focus {
+		border-color: #ddd;
+	}
+
+
+}

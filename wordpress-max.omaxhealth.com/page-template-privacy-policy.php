@@ -1,7 +1,7 @@
-<?php get_header(); ?>
+<?php get_template_part('content','header'); ?>
 <?php the_post(); ?>
-<main id="legal">
 
+<main id="legal">
 	<section>
 		<div class="container">
 			<h1>Privacy Policy</h1>
@@ -64,11 +64,11 @@
 			<p>Omax Health, Inc.<br>50 Bridge Street<br>New Hope, PA 18938</p>
 			
 			<h2>QUESTIONS AND CONTACT INFORMATION</h2>
-			<p><a href="mailto:customercare@omax3.com">customercare@omax3.com</a><br><a href="tel:1-800-765-6691">1-800-765-6691</a><span> (M-F, 8am to 7pm EST)</span></p>
+			<p><a href="mailto:care@omaxhealth.com">care@omaxhealth.com</a><br><a href="tel:1-800-765-6691">1-800-765-6691</a><span> (M-F, 8am to 7pm EST)</span></p>
 			<p><strong>Revised 2/5/18</strong></p>
 			<p>&copy;Omax Health, Inc. <script>document.write(new Date().getFullYear())</script></p>
 		</div>
 	</section>
 			
 </main>	
-<?php get_footer(); ?>
+<?php get_template_part('content','footer'); ?>

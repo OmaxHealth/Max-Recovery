@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title><?php wp_title(''); ?></title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P88345F');</script>
+	<!-- End Google Tag Manager -->
+	
+	<title><?php wp_title(''); ?></title>
 	<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" />
@@ -13,9 +18,6 @@
 	<?php wp_enqueue_style('styles',get_bloginfo('template_directory').'/style.css',array(),'1.0'); ?>
 	<?php wp_head(); ?>
 	
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P88345F');</script>
-<!-- End Google Tag Manager -->
 </head>
 <body class="page-home">
 <!-- Google Tag Manager (noscript) -->
@@ -32,7 +34,7 @@
 	</div>
 	<div class="lower">
 		<div class="container">
-			<span>Save Over 40%* + FREE SHIPPING</span>
+			<span>Save up to 50%* + FREE SHIPPING</span>
 		</div>
 	</div>
 </header>
